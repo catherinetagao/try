@@ -4,58 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This is all about Github</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="bg-gray-100 text-gray-800">
     <!-- Easy tutorial using github -->
-    <h1 id="title">This is all about Github</h1>
-    
-    <h2>What is GitHub?</h2>
-    <p>GitHub is a web-based platform used for version control and collaborative software development. It allows multiple people to work on a project simultaneously and track changes to the codebase.</p>
-    
-    <h2>Example of Using GitHub</h2>
-    <p>Here is a simple example of how to use GitHub:</p>
-    <ol>
-      <li>Create a repository on GitHub.</li>
-      <li>Clone the repository to your local machine using the command:
-        <pre><code>git clone https://github.com/your-username/your-repository.git</code></pre>
-      </li>
-      <li>Make changes to the code on your local machine.</li>
-      <li>Commit the changes using the command:
-        <pre><code>git commit -m "Your commit message"</code></pre>
-      </li>
-      <li>Push the changes back to GitHub using the command:
-        <pre><code>git push origin main</code></pre>
-      </li>
-    </ol>
-    
-    <h2>Example of Creating a New Project and Uploading to GitHub</h2>
-    <p>Here is a simple example of how to create a new project and upload it to GitHub:</p>
-    <ol>
-      <li>Create a new repository on GitHub.</li>
-      <li>Initialize a new Git repository in your project directory using the command:
-        <pre><code>git init</code></pre>
-      </li>
-      <li>Add your project files to the repository using the command:
-        <pre><code>git add .</code></pre>
-      </li>
-      <li>Commit the changes using the command:
-        <pre><code>git commit -m "Initial commit"</code></pre>
-      </li>
-      <li>Link your local repository to the GitHub repository using the command:
-        <pre><code>git remote add origin https://github.com/your-username/your-repository.git</code></pre>
-      </li>
-      <li>Push the changes to GitHub using the command:
-        <pre><code>git push -u origin main</code></pre>
-      </li>
-    </ol>
-    
-    <h2>Purpose of Using GitHub</h2>
-    <p>The main purposes of using GitHub are:</p>
-    <ul>
-      <li>Version Control: Track and manage changes to the codebase over time.</li>
-      <li>Collaboration: Allow multiple developers to work on the same project simultaneously.</li>
-      <li>Backup: Keep a remote copy of the codebase to prevent data loss.</li>
-      <li>Open Source: Share your projects with the community and contribute to other projects.</li>
-    </ul>
+    <div class="container mx-auto p-4">
+      <h1 id="title" class="text-4xl font-bold text-center mb-8">
+        This is all about Github
+      </h1>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">What is GitHub?</h2>
+        <p class="mb-4">
+          GitHub is a web-based platform used for version control and
+          collaborative software development. It allows multiple people to work
+          on a project simultaneously and track changes to the codebase.
+        </p>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Example of Using GitHub</h2>
+        <p class="mb-4">Here is a simple example of how to use GitHub:</p>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Create a repository on GitHub.</li>
+          <li>
+            Clone the repository to your local machine using the command:
+            <pre
+              class="bg-gray-200 p-2 rounded"
+            ><code>git clone https://github.com/your-username/your-repository.git</code></pre>
+          </li>
+          <li>Make changes to the code on your local machine.</li>
+          <li>
+            Commit the changes using the command:
+            <pre
+              class="bg-gray-200 p-2 rounded"
+            ><code>git commit -m "Your commit message"</code></pre>
+          </li>
+          <li>
+            Push the changes back to GitHub using the command:
+            <pre
+              class="bg-gray-200 p-2 rounded"
+            ><code>git push origin main</code></pre>
+          </li>
+        </ol>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          Example of Creating a New Project and Uploading to GitHub
+        </h2>
+        <p class="mb-4">
+          Here is a simple example of how to create a new project and upload it
+          to GitHub:
+        </p>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Create a new repository on GitHub.</li>
+          <li>
+            Initialize a new Git repository in your project directory using the
+            command:
+            <pre class="bg-gray-200 p-2 rounded"><code>git init</code></pre>
+          </li>
+          <li>
+            Add your project files to the repository using the command:
+            <pre class="bg-gray-200 p-2 rounded"><code>git add .</code></pre>
+          </li>
+          <li>
+            Commit the changes using the command:
+            <pre
+              class="bg-gray-200 p-2 rounded"
+            ><code>git commit -m "Initial commit"</code></pre>
+          </li>
+          <li>
+            Link your local repository to the GitHub repository using the
+            command:
+            <pre
+              class="bg-gray-200 p-2 rounded"
+            ><code>git remote add origin https://github.com/your-username/your-repository.git</code></pre>
+          </li>
+          <li>
+            Push the changes to GitHub using the command:
+            <pre
+              class="bg-gray-200 p-2 rounded"
+            ><code>git push -u origin main</code></pre>
+          </li>
+        </ol>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Purpose of Using GitHub</h2>
+        <p class="mb-4">The main purposes of using GitHub are:</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            Version Control: Track and manage changes to the codebase over time.
+          </li>
+          <li>
+            Collaboration: Allow multiple developers to work on the same project
+            simultaneously.
+          </li>
+          <li>
+            Backup: Keep a remote copy of the codebase to prevent data loss.
+          </li>
+          <li>
+            Open Source: Share your projects with the community and contribute
+            to other projects.
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
